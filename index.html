@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İslam'da Bilgi ve Bilginin Kaynakları - Ders & Sorular</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px; --radius:14px; --gap:20px; --pad:22px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{background:linear-gradient(180deg,#071129 0%, #081225 100%); color:#e6eef8; margin:0; padding:30px; display:flex; justify-content:center}
+    .wrap{width:100%; max-width:var(--maxw)}
+
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:18px}
+    .brand{display:flex; gap:14px; align-items:center}
+    .logo{width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#3b82f6); display:flex; align-items:center; justify-content:center; font-weight:700}
+    h1{font-size:20px; margin:0}
+    p.lead{margin:0; color:var(--muted); font-size:13px}
+
+    nav{display:flex; gap:10px}
+    nav a{color:var(--muted); text-decoration:none; padding:8px 12px; border-radius:10px; font-size:14px}
+    nav a:hover{background:var(--glass); color:#fff}
+
+    main{display:grid; grid-template-columns: 1fr 360px; gap:var(--gap)}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:var(--radius); padding:var(--pad); box-shadow: 0 6px 18px rgba(2,6,23,0.6);}
+
+    article h2{margin-top:0}
+    section + section{margin-top:18px}
+
+    .toc{position:sticky; top:30px}
+    .toc h3{margin-top:0}
+    .toc ul{list-style:none; padding:0; margin:0}
+    .toc li{margin-bottom:8px}
+    .toc a{color:var(--muted); text-decoration:none; font-size:14px}
+    .toc a:hover{color:#fff}
+
+    .topic {margin-bottom:12px}
+    .topic p{color:#dbeafe; line-height:1.6}
+    .muted{color:var(--muted); font-size:14px}
+
+    details{background:rgba(255,255,255,0.02); padding:12px; border-radius:10px; margin-top:10px}
+    summary{cursor:pointer; font-weight:600}
+    details p{margin:8px 0 0 0}
+
+    .quiz{display:grid; gap:12px}
+    .q{padding:12px; border-radius:10px; background:rgba(0,0,0,0.2)}
+    .q strong{display:block}
+
+    footer{margin-top:18px; text-align:center; color:var(--muted); font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      main{grid-template-columns:1fr;}
+      .toc{position:relative}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">İB</div>
+        <div>
+          <h1>İslam'da Bilgi ve Bilginin Kaynakları</h1>
+          <p class="lead">Konu anlatımı, kısa özet ve alıştırma soruları</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#bilgi">Bilgi Nedir?</a>
+        <a href="#ilim">İslam'da İlme Önem</a>
+        <a href="#bilgi-turleri">Bilginin Türleri</a>
+        <a href="#allah">Allah'ı Tanımak</a>
+        <a href="#sinav">Sorular</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <article id="bilgi" class="card">
+          <h2>Bilgi Nedir?</h2>
+          <div class="topic">
+            <p>Bilgi, insanın araştırma ve gözlem sonucu elde ettiği malumattır. Bilim ise düzenli, sistemli ve doğrulanabilir bilgi üretme sürecidir.</p>
+            <p class="muted">Kısa notlar:</p>
+            <ul>
+              <li><strong>Kadim Bilgi:</strong> Allah'ın bilgisidir; sınırsız ve ezeli.</li>
+              <li><strong>Hadisî Bilgi:</strong> İnsan bilgisidir; sınırlıdır; geçmişi bilir ama geleceği bilemez.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="ilim" class="card" style="margin-top:16px">
+          <h2>İslam Dininde İlme Verilen Önem</h2>
+          <div class="topic">
+            <p>İslam, bilgiye yüksek değer verir. Kur'an'da ve hadislerde ilmin önemi vurgulanır. İlk vahiylerden biri "oku" emridir. Tarihte Bedir esirlerine öğretecekler varsa serbest bırakma gibi uygulamalar da örnek gösterilir.</p>
+            <p class="muted">Vurgulanması gerekenler:</p>
+            <ul>
+              <li>Bilgi öğrenmek kadın-erkek her Müslümana farzdır (hadis).</li>
+              <li>Bilindiği gibi Kur'an, ilmi teşvik eden pek çok ayet içerir.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="islam-bilimleri" class="card" style="margin-top:16px">
+          <h2>Bazı İslam Bilimleri</h2>
+          <div class="topic">
+            <ul>
+              <li><strong>Tefsir:</strong> Kur'an'ı anlama ve yorumlama ilmi.</li>
+              <li><strong>Hadis:</strong> Peygamberimizin söz, fiil ve onaylarını inceleyen ilim.</li>
+              <li><strong>Fıkıh:</strong> İbadet ve sosyal ilişkilerle ilgili davranış kurallarını belirleyen ilim.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="bilgi-turleri" class="card" style="margin-top:16px">
+          <h2>Bilginin Türleri</h2>
+          <div class="topic">
+            <ul>
+              <li><strong>Gündelik Bilgi:</strong> Deneyime dayalı, sistemsiz bilgi.</li>
+              <li><strong>Teknik Bilgi:</strong> İhtiyaçları karşılamaya yönelik pratik bilgiler.</li>
+              <li><strong>Dini Bilgi:</strong> Kaynağı vahiy; değişmez kabul edilir.</li>
+              <li><strong>Bilimsel Bilgi:</strong> Deney ve gözleme dayanır; zamanla değişebilir.</li>
+              <li><strong>Sanatsal Bilgi:</strong> Duygu ve estetiğe dayanır.</li>
+              <li><strong>Felsefi Bilgi:</strong> Akıl ve sorgulamaya dayanır.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="kaynaklar" class="card" style="margin-top:16px">
+          <h2>İslam Dini'nde Bilgi Kaynakları</h2>
+          <div class="topic">
+            <p>Bilgi kaynakları şu başlıklar etrafında toplanabilir:</p>
+            <ul>
+              <li><strong>Selim Akıl:</strong> Sağlıklı ve doğru düşünen akıl.</li>
+              <li><strong>Selim Duyular:</strong> Duyu organlarının sağlıklı verileri.</li>
+              <li><strong>Sadık Haber:</strong> Doğruluğu kesin olan haberler; örn. vahiy ve mütevâtir haber.</li>
+            </ul>
+            <p class="muted">Kısa terimler:</p>
+            <ul>
+              <li><strong>Haber-i Vahiy:</strong> Allah'ın peygamberlere bildirdiği haber.</li>
+              <li><strong>Mütevâtir Haber:</strong> Yalan üzerinde birleşme ihtimali bulunmayan geniş toplulukların nakli.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="allah" class="card" style="margin-top:16px">
+          <h2>2. Ünite: Allah'ı Tanımak</h2>
+          <div class="topic">
+            <p><strong>Halik</strong>: Yaratan. <strong>Mahlûk</strong>: Yaratılan. Allah her şeyin yaratıcısı ve evrenin sahibidir.</p>
+            <p>Âlem; görülen (şehadet âlemi) ve görülmeyen (gayb âlemi) varlıklardan oluşur: melek, cin, ruh gibi.</p>
+            <p>İnsan, Allah'a karşı sorumludur. "Ahsen-i takvim" ifadesi insanın en güzel biçimde yaratılışına işaret eder. Yanlış davranış hâlinde kişi "esfel-i sâfilin" olur.</p>
+          </div>
+        </article>
+
+        <article id="egitim-kurumlari" class="card" style="margin-top:16px">
+          <h2>İslam Kültüründeki Eğitim Kurumları</h2>
+          <div class="topic">
+            <ul>
+              <li>Cami / Mescit</li>
+              <li>Medrese</li>
+              <li>Mektep</li>
+              <li>Beytü'l Hikme (Bilgi evi / Kütüphane)</li>
+              <li>Rasathane (Gözlemevi)</li>
+              <li>Bimarhane (Hastane)</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="sinav" class="card" style="margin-top:16px">
+          <h2>Alıştırma Soruları</h2>
+          <div class="quiz">
+            <div class="q">
+              <strong>Soru 1:</strong>
+              <p>Bilgi nedir? Bilim ile bilgiyi karşılaştırarak kısa bir cevap veriniz.</p>
+              <details><summary>Cevap (gizli)</summary><p>Bilgi, gözlem ve araştırma sonucu elde edilen malumattır. Bilim ise bilgiyi sistemli, deney ve gözleme dayalı olarak üreten süreçtir.</p></details>
+            </div>
+
+            <div class="q">
+              <strong>Soru 2:</strong>
+              <p>İslam'da ilme neden önem verilir? En az iki delille açıklayınız.</p>
+              <details><summary>Cevap (gizli)</summary><p>Kur'an'da ilmin önemine dair ayetler ve "İlim öğrenmek her Müslümana farzdır" gibi hadisler bu önemi destekler. Ayrıca tarihsel uygulamalarda bilgiye verilen değer (ör: Bedir esirleri uygulaması) örnek gösterilebilir.</p></details>
+            </div>
+
+            <div class="q">
+              <strong>Soru 3:</strong>
+              <p>Tefsir, Hadis ve Fıkıh ilimlerini kısa tanımlarıyla yazınız.</p>
+              <details><summary>Cevap (gizli)</summary><p>Tefsir: Kur'an'ı anlama ilmi. Hadis: Peygamberimizin söz, fiil ve onaylarını aktaran ilim. Fıkıh: İbadet ve sosyal ilişkilerle ilgili davranış kurallarını belirleyen ilim.</p></details>
+            </div>
+
+            <div class="q">
+              <strong>Soru 4:</strong>
+              <p>Bilginin türlerinden üçünü seçip örnek veriniz.</p>
+              <details><summary>Cevap (gizli)</summary><p>Örnek: Gündelik bilgi (mutfak deneyimleri), Bilimsel bilgi (tıp çalışmaları), Dini bilgi (vahiy kaynaklı bilgiler).</p></details>
+            </div>
+
+            <div class="q">
+              <strong>Soru 5:</strong>
+              <p>Selim akıl, selim duyular ve sadık haber nedir; kısa tanımlarla açıklayınız.</p>
+              <details><summary>Cevap (gizli)</summary><p>Selim akıl: doğru düşünebilen akıl. Selim duyular: yanılmayan, doğru veri sunan duyular. Sadık haber: güvenilir, doğruluğu kesin sayılan nakiller (ör: vahiy, mütevâtir haber).</p></details>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <aside class="toc card">
+        <h3>İçindekiler</h3>
+        <ul>
+          <li><a href="#bilgi">Bilgi Nedir?</a></li>
+          <li><a href="#ilim">İslam'da İlme Önem</a></li>
+          <li><a href="#islam-bilimleri">İslam Bilimleri</a></li>
+          <li><a href="#bilgi-turleri">Bilginin Türleri</a></li>
+          <li><a href="#kaynaklar">Bilgi Kaynakları</a></li>
+          <li><a href="#allah">Allah'ı Tanımak</a></li>
+          <li><a href="#egitim-kurumlari">Eğitim Kurumları</a></li>
+          <li><a href="#sinav">Sorular</a></li>
+        </ul>
+
+      </aside>
+
+    </main>
+  </div>
+</body>
+</html>
